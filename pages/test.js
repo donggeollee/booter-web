@@ -6,6 +6,7 @@ import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Footer from "components/Footer/Footer.js";
 import Button from "components/CustomButtons/Button.js"; 
+import Table from "components/Agora/Common/Table.js"
 import {useDispatch, useSelector} from "react-redux";
 import { COUNT_MINUS_REQUEST, COUNT_PLUS_REQUEST } from "../reducer/count";
 
@@ -85,6 +86,9 @@ const Test = (props) => {
         </div>
         <div className={classes.point}>
             <span>{count.point}</span>
+        </div>
+        <div>
+          <Table/>         
         </div>
       </div>
 

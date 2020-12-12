@@ -9,6 +9,7 @@ import "assets/scss/nextjs-material-kit.scss?v=1.1.0";
 // REDUX, REDUX-SAGA SETUP 
 import wrapper from "../store";
 import withReduxSaga from "next-redux-saga";
+import { Navigation } from "@material-ui/icons";
 
 
 Router.events.on("routeChangeStart", url => {
@@ -48,6 +49,7 @@ class MyApp extends App {
           <Head>
             <title>NextJS Material Kit by Creative Tim</title>
           </Head>
+          <Navigation></Navigation>
           <Component {...pageProps} />
         </React.Fragment>
     );
