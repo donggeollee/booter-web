@@ -6,10 +6,10 @@ import Router from "next/router";
 import PageChange from "components/PageChange/PageChange.js";
 import "assets/scss/nextjs-material-kit.scss?v=1.1.0";
 
-// REDUX, REDUX-SAGA SETUP 
+// REDUX, REDUX-SAGA SETUP
 import wrapper from "../store";
 import withReduxSaga from "next-redux-saga";
-import { Navigation } from "@material-ui/icons";
+import {Navigation} from "@material-ui/icons";
 
 
 Router.events.on("routeChangeStart", url => {
